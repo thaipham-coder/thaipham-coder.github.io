@@ -143,7 +143,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    border-radius: 0px;
+    border-radius: 25px;
     padding: 0 20px;
 	min-width:140px;
     outline: none;
@@ -151,8 +151,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     display: inline-block;
 	text-align:center;
 	text-transform:capitalize;
-	background-color:#f6483b;
-	border:1px solid #f6483b;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 300% 300%;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -160,14 +161,23 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_btn:hover, .prt_btn:focus{
-    color: #f6483b;
-    background-color: #111111;
-	border:1px solid #f6483b;
+    color: #ffffff;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 /*---------- Typography css End -------*/
 /*---------- Main Wrapper css Start -------*/
@@ -187,7 +197,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	background-color: #000000;
 }
 .prt_home_wrapper{
-	background-image:url(https://dummyimage.com/1920x950);
+	background-image:url(../images/content/banner_text_bg.jpg);
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -201,9 +211,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 	font-size:150px;
 	color: #ffffff;
 	font-weight:bold;
-	background: url(../images/content/banner_text_bg.jpg) no-repeat;
+	background: url(../images/content/banner_text_bg_v1.jpg) no-repeat;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: #ffffff14;
     background-size: cover;
     background-position: -41px -85px;
 }
@@ -439,7 +449,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_right:hover .prt_about_learnbox_year h1{
-	color:#f6483b;
+	color:#ffffff9c;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -447,7 +457,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_learnbox_left:hover .prt_about_learnbox_year h1{
-	color:#f6483b;
+	color:#ffffff9c;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
