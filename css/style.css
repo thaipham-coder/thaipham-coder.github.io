@@ -571,7 +571,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_experiencebox:hover:after{
-	background-color:rgba(255, 255, 255, 0.2);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -579,7 +581,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_about_experiencebox:hover .prt_about_experience_year h1{
-	color:#f6483b;
+	color:#ffffff;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1642,5 +1644,8 @@ button.prt_btn.prt_loadMore {
     }
     .prt_services_slider_wrapper {
         height: 1370px;
+    }
+    .prt_btn {
+        min-width: 120px;
     }
 }

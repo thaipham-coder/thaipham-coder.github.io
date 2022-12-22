@@ -1,9 +1,9 @@
 /*--------------------- Copyright (c) 2018 -----------------------
 [Master Javascript]
 
-Project: Portfolio Responsive HTML Template
-Version: 1.0.6
-Assigned to: ThemeForest
+Project: THAI - My Portfolio
+Version: 2.0.0
+Assigned to: Github
 -------------------------------------------------------------------*/
 (function($){
   "use strict";
@@ -11,7 +11,7 @@ Assigned to: ThemeForest
 	// Preloader Js
 	jQuery(window).on('load', function() {
 		jQuery("#status").fadeOut();
-		jQuery("#preloader").delay(200).fadeOut("slow");
+		jQuery("#preloader").delay(300).fadeOut("slow");
 	});
 	
 	// ready function
